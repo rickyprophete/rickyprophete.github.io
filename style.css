@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(100, 2, 67, 0.918);
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 100 px repeat(4, 1fr) 100px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    max-width: 1600px;
+    max-height: 1600px;
+    gap: 10px;
+    color: white;
+    overflow-x: hidden;
+}
+
+#home {
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+nav {
+    margin: auto;
+    place-self: center;
+    position: relative;
+    right: -19%;
+}
+
+nav a {
+    display: inline;
+    margin-left: 10vw;
+    color: white;
+    font-family: "Roboto Mono";
+    text-decoration: none;
+}
+
+article {
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    width: 66vw;
+    place-self: center;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Roboto Mono";
+}
+
+header {
+    min-height: 50px;
+    min-width: 100%;
+}
+
+.project img {
+    width: 25vw;
+    height: 20vw;
+    border-radius: 3px;
+    min-width: 180px;
+    min-height: 140px;
+}
+
+#projects img:hover {
+    opacity: 66%;
+}
+
+footer {
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+
+footer div {
+    display: inline;
+    margin: 3vw;
+    font-family: "Roboto Mono";
+}
+
+#contact div a {
+    text-decoration: none;
+    color: white;
+}

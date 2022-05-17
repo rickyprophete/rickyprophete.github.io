@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/*Beginning of header*/
+header {
+    height: 69px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    border-bottom: 1px solid seashell;
+    z-index: 10;
+    background-color: black;
+}
+
+header img {
+    height: 50px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+header nav {
+    float: right;
+    position: fixed;
+    right: 10px;
+    top: 20px;
+}
+
+header nav a {
+    margin-left: 20px;
+    text-decoration: underline;
+}
+/*End of header*/
+
+#mission {
+    position: relative;
+    top: 69px;
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto 69px auto;
+    background-image: url("resources/img-mission-background.webp");
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+}
+#mission div {
+    height: 150px;
+    width: 100%;
+    margin: auto auto;
+    background-color: black;
+    opacity: 1;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#mission div h2 {
+    margin: 20px;
+}
+#mission div h4 {
+    margin: 10px;
+}
+
+#tea  {
+    width: 1000px;
+    margin: 40px auto;
+}
+#tea h2 {
+    margin: 40px auto 20px auto;
+}
+#tea h4 {
+    margin: 20px auto;
+}
+#tea div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+#tea div figure img {
+    height: 200px;
+    width: 300px;
+    margin: 10px 10px 10px 10px;
+}
+#tea div figure h4 {
+    margin: 10px 10px 15px 10px;
+}
+
+#locations #location-container {
+    height: 500px;
+    width: 1200px;
+    margin: 0 auto;
+    background-image: url("resources/img-locations-background.webp");
+    object-fit: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+}
+
+div.location {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+#contact {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+main footer {
+    text-align: left;
+    position: absolute;
+}
